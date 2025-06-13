@@ -76,12 +76,29 @@ The input CSV file should contain the following columns:
 
 ## Model Performance
 
-The project implements three different models:
-1. Logistic Regression
-2. XGBoost
-3. Random Forest
+The project implements three different models with their respective ROC-AUC scores:
 
-Each model's performance is evaluated using ROC-AUC scores on both training and validation sets.
+1. Logistic Regression
+   - Training ROC-AUC Score: 0.9015
+   - Validation ROC-AUC Score: 0.8996
+
+2. XGBoost
+   - Training ROC-AUC Score: 0.7493
+   - Validation ROC-AUC Score: 0.7567
+
+3. Random Forest
+   - Training ROC-AUC Score: 0.9999
+   - Validation ROC-AUC Score: 0.9654
+
+### Performance Analysis
+- The Random Forest model shows the best performance with a validation ROC-AUC score of 0.9654
+- Logistic Regression performs well with a validation score of 0.8996
+- XGBoost shows relatively lower performance but still maintains good discrimination power
+
+### Dataset Statistics
+- Total number of transactions: 6,362,620
+- Number of fraudulent transactions: 8,213 (0.13% of total)
+- Number of legitimate transactions: 6,354,407 (99.87% of total)
 
 ## License
 
